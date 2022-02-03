@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="portfoliostyles.css" />
+   <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sherin Philip | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+   <nav>
+       <h1>Sherin Philip</h1>
+       <ul class= "navigation">
+           <li><a href ="#about" class="nav-link">About</a></li>
+           <li><a href ="#skills" class="nav-link">Skills</a></li>
+           <li><a href ="#projects" class="nav-link">Projects</a></li>
+           <li><a href ="#contact" class="nav-link">Contact</a></li>
+       </ul>
+       <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+   </nav>
+    <!-- Hero Section -->
+   <section class ="hero" id="about">
+     <img
+       src = "C:\Users\sheri\OneDrive\Desktop\Portfolio\Portfolio.jpg"
+       alt ="sherin-philip"
+       class ="my-pic"
+       loading="lazy"
+     />
+     <div class ="bio animate__animated animate__pulse">
+        <h2 class = "bio-title">About me</h2>
+        <p class= "bio-text">
+        Hello! I am an aspiring, self taught Front-end Web Developer. I am passionate about solving problems and being creative!
+        </p>
+     </div>
+   </section>
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Born and raised in India, I migrated to the United States in 2012. Prior to migrating, I pursued my studies in Advanced Mathematics. As a student of Mathematics, I came to the realization that learning is perputual and service is universal. I look forward to be part of an entity where I will be challenged to take on difficult tasks. I am a firm beleiver that resilience coupled with grit make dreams come true!I aspire to be a Front-end Web Developer par excellence. In the future, I envision to create an entity that will pave the path for young women from low income background to pursue a career in STEM.
+      </p>
+    </section>
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      
+        <div class="skills-wrapper animate__animated animate__pulse">
+          <img
+            src="file:///C:/Users/sheri/Downloads/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="file:///C:/Users/sheri/Downloads/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="C:\Users\sheri\Downloads\icons8-jquery-is-a-javascript-library-designed-to-simplify-html-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        
+
+        
+          <img
+            src="file:///C:/Users/sheri/Downloads/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="file:///C:/Users/sheri/Downloads/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+         
+        
+      </div>
+    </section>
+    <!-- Projects section -->
+   <section class = "projects" id="projects">
+     <h2 class="projects-title">My most recent work</h2>
+     <div class="projects-container">
+       <div class="project-container project-card">
+         <img
+         src ="C:\Users\sheri\OneDrive\Desktop\rps.jpg"
+         alt ="rockpaperscissor"
+         loading="lazy"
+         class ="project-pic"
+         />
+         <h3>Rock Paper Scissor</h3>
+         <p class ="project-details">This is a Rock Paper Scissor game where a player competes against the computer.</p>
+        <a href="#" target="_blank" class="project-link">More...</a>
+        </div>
+       <div class="project-container project-card">
+        <img
+        src ="C:\Users\sheri\OneDrive\Desktop\weatherapp.jpg"
+        alt ="weatherapp"
+        loading="lazy"
+        class ="project-pic"
+        />
+        <h3>The Weather app</h3>
+        <p class ="project-details">This is a Weather app that gives you about the current weather based on your location.</p>
+       <a href="#" target="_blank" class="project-link">More...</a>
+       </div>
+       <div class="project-container project-card">
+        <img
+        src ="C:\Users\sheri\OneDrive\Desktop\shoppinglist.jpg"
+        alt ="shoppinglist"
+        loading="lazy"
+        class ="project-pic"
+        />
+        <h3>Shopping list</h3>
+        <p class ="project-details">This website helps you keep track of items that need to be purchased.</p>
+       <a href="#" target="_blank" class="project-link">More...</a>
+       </div>
+     </div>
+   </section>
+    <!-- Contact section -->
+   <section class="contact" id="contact">
+     <h2>Contact me</h2>
+     <div class="contact-form-container">
+       <div class ="contact-form">
+        <form action="https://formspree.io/f/moqrjygz" method="POST" >
+         <div class="form-control">
+          <label for="name">Name</label>
+          <input 
+           type="text" 
+           id="name" 
+           name="sender-name" 
+           placeholder="Enter your name"
+           class="input-field"
+           required
+           />
+         </div>
+         <div class="form-control">
+          <label for="email">Email</label>
+          <input 
+           type="email" 
+           id="email" 
+           name="sender-email" 
+           placeholder="Enter your email"
+           class="input-field"
+           required
+           />
+         </div>
+         <div class="form-control">
+          <label for="message">Message</label>
+          <textarea
+           id="message" 
+           cols="50"
+           rows="10"
+           name="message" 
+           placeholder="Enter your message"
+           class="input-field"
+           required
+          ></textarea>
+         </div>
+        <input
+        type = "submit"
+        value ="Submit"
+        class="input-field"
+        required
+        />
+      </form>
+
+       </div>
+
+     </div>
+   </section>
+    <!-- Footer section -->
+    <footer>
+    <p></p>
+     
+    </footer>
+    <i class= "scroll-up" id="scroll-up">
+      <img
+      src="C:\Users\sheri\Downloads\icons8-upward-arrow-64.png"
+        class="socicon up-arrow"
+        alt="scroll-up"
+      />
+    </i>
+
+    <!-- Website scripts -->
+    <script>
+      const scrollUp = document.getElementById("scroll-up");
+      scrollUp.addEventListener("click", () => {
+      window.scrollTo(0,0);
+       });
+       const burger = document.querySelector("#burger-menu");
+       const ul = document.querySelector("nav ul");
+       const nav = document.querySelector("nav");
+       burger.addEventListener("click", () => {
+        ul.classList.toggle("show");
+      });
+      const navLink = document.querySelectorAll(".nav-link");
+      navLink.forEach((link) =>
+      link.addEventListener("click", ()=>{
+        ul.classList.remove("show");
+      })
+      ); 
+     
+    </script>
+
+    
+   
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
